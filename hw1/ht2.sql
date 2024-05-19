@@ -1,3 +1,9 @@
+CREATE TABLE Customers (
+    customer_id INT PRIMARY KEY,
+    customer_name VARCHAR(100),
+    email VARCHAR(100)
+);
+
 CREATE TABLE Phones (
     phone_id INT PRIMARY KEY,
     brand VARCHAR(50),
@@ -26,4 +32,3 @@ CREATE TABLE Orders (
     FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
     FOREIGN KEY (phone_id) REFERENCES Phones(phone_id)
 );
-
